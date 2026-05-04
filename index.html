@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya R | Engineering Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">VR<span>.</span></h2>
+        <ul class="nav-links">
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('about')">About</li>
+            <li onclick="showSection('projects')">Projects</li>
+            <li onclick="showSection('internships')">Internships</li>
+            <li onclick="showSection('certifications')">Certifications</li>
+            <li onclick="showSection('contact')">Contact</li>
+        </ul>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle Theme">
+            <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <!-- HOME -->
+        <section id="home" class="content active hero-grid">
+            <div class="hero-text">
+                <p class="badge">Computer Science & Engineering</p>
+                <h1>Vidya R</h1>
+                <h3>Computer Science & Engineering Student</h3>
+                <div class="cta">
+                    <a href="assets/VIDYA RESUME.pdf" download="Vidya_R_Resume" class="btn primary"><i class="fas fa-download"></i> Download CV</a>
+                    <button class="btn secondary" onclick="showSection('contact')">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="profile-circle">
+                    <img src="assets/Vidya_Photo.jpg" alt="Vidya R">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="content">
+            <div class="section-header">
+                <span class="badge">Profile</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="card">
+                <p>Aspiring Computer Science and Engineering student seeking an entry-level opportunity to apply academic knowledge and grow in software development and emerging technologies. Eager to contribute to a dynamic team and learn through real-world projects.</p>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fas fa-code icon-accent"></i> Technical Skills</h3>
+                    <div class="tags">
+                        <span>Python</span><span>Java</span><span>SQL</span>
+                        <span>HTML/CSS</span><span>JavaScript</span><span>Figma</span><span>VS Code</span>
+                    </div>
+                    <h3 style="margin-top:20px"><i class="fas fa-users icon-accent"></i> Soft Skills</h3>
+                    <div class="tags">
+                        <span>Teamwork</span><span>Problem Solving</span>
+                        <span>Critical Thinking</span><span>Quick Learner</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap icon-accent"></i> Education</h3>
+                    <div class="edu-item">
+                        <strong>BE in CSE</strong>
+                        <p>St Joseph Engineering College, Mangalore</p>
+                        <span class="edu-meta">2023–26 | 7.23 CGPA</span>
+                    </div>
+                    <div class="edu-item">
+                        <strong>Diploma in CSE</strong>
+                        <p>Govt. Polytechnic for Women, Bondel</p>
+                        <span class="edu-meta">2020–23 | 8.12 CGPA</span>
+                    </div>
+                    <div class="edu-item">
+                        <strong>SSLC</strong>
+                        <p>Sri Ramashrama English Medium School</p>
+                        <span class="edu-meta">2020 | 63.68%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-language icon-accent"></i> Languages</h3>
+                <div class="lang-grid">
+                    <div class="lang-item"><span class="lang-name">English</span><span class="lang-level">Full Professional</span></div>
+                    <div class="lang-item"><span class="lang-name">Hindi</span><span class="lang-level">Professional Working</span></div>
+                    <div class="lang-item"><span class="lang-name">Kannada</span><span class="lang-level">Elementary</span></div>
+                    <div class="lang-item"><span class="lang-name">Tamil</span><span class="lang-level">Elementary</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="content">
+            <div class="section-header">
+                <span class="badge">Work</span>
+                <h2>Projects</h2>
+            </div>
+          <div class="card project-card">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fas fa-globe"></i></div>
+                    <span class="project-status">Completed</span>
+                </div>
+                <h3>Personal Portfolio Website</h3>
+                <p>A fully responsive personal portfolio built from scratch to showcase skills, internships, and certifications. Features light/dark theme toggle, smooth section routing, and modern UI design.</p>
+                <div class="tags" style="margin-top:14px">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Vidya-1904" target="_blank" class="btn primary small"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERNSHIPS -->
+        <section id="internships" class="content">
+            <div class="section-header">
+                <span class="badge">Experience</span>
+                <h2>Internships</h2>
+            </div>
+            <div class="card">
+                <div class="intern-header">
+                    <div>
+                        <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:26px;">Salesforce Developer Intern</h2>
+                        <p class="org"><i class="fas fa-building"></i> Agentblazer Champion Program</p>
+                        <p class="date"><i class="fas fa-calendar"></i> May – July 2025 | 8 Weeks</p>
+                    </div>
+                    <span class="intern-badge">Agentblazer Champion</span>
+                </div>
+                <p style="margin:18px 0;color:var(--text-muted);font-size:15px;">8-week internship introducing Salesforce fundamentals including data management, security, automation, and UI with hands-on exposure to Apex development. Gained understanding of requirement gathering and business process workflows.</p>
+                <div class="intern-details-grid">
+                    <div class="intern-col">
+                        <h4>Salesforce Fundamentals</h4>
+                        <ul class="detail-list">
+                            <li>Organizational Setup & UI</li>
+                            <li>Data & Security Management</li>
+                            <li>Process Automation and Logic</li>
+                            <li>Developer Fundamentals</li>
+                        </ul>
+                    </div>
+                    <div class="intern-col">
+                        <h4>Hands-on & Superbadges</h4>
+                        <ul class="detail-list">
+                            <li>Apex Specialist</li>
+                            <li>Lightning Web Components Basics</li>
+                            <li>Object Relationships Superbadge Unit</li>
+                            <li>Agentblazer Champion Status</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="content">
+            <div class="section-header">
+                <span class="badge">Credentials</span>
+                <h2>Certifications</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="card cert-card">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <div><strong>CCNA</strong><p>Cisco Networking Academy</p></div>
+                </div>
+                <div class="card cert-card">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <div><strong>AWS Cloud Foundations</strong><p>AWS Academy</p></div>
+                </div>
+                <div class="card cert-card">
+                    <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                    <div><strong>Data Analytics Simulation</strong><p>Deloitte Australia (Forage)</p></div>
+                </div>
+                <div class="card cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div><strong>Cybersecurity</strong><p>Cisco Networking Academy</p></div>
+                </div>
+                <div class="card cert-card">
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <div><strong>Introduction to Cloud</strong><p>IBM</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="content">
+            <div class="section-header">
+                <span class="badge">Get In Touch</span>
+                <h2>Contact</h2>
+            </div>
+            <div class="card center">
+                <p style="max-width:480px;margin:0 auto 30px;color:var(--text-muted);">vidyarb1904@gmail.com &nbsp;·&nbsp; +91 8217213956</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Vidya-1904" target="_blank" class="icon-btn">
+                        <i class="fab fa-github"></i><span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/vidya-r-a83427272/" target="_blank" class="icon-btn">
+                        <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:vidyarb1904@gmail.com" class="icon-btn">
+                        <i class="fas fa-envelope"></i><span>Email</span>
+                    </a>
+                    <a href="tel:+918217213956" class="icon-btn">
+                        <i class="fas fa-phone"></i><span>Call</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Vidya R · Designed & Built by Vidya R</p>
+    </footer>
+
+</body>
+</html>
